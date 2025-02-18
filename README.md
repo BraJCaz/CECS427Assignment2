@@ -4,4 +4,5 @@
 # Due Date: 2/28/2025
 
 Objective
-# In this assignment, we're going to modify our graph.py file from assingment 1 because we need to 
+# In this assignment, we're going to modify our graph.py file from assignment 1 because our aim is to practice class-learned concepts to generate graphical representations in Python. 
+# 
