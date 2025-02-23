@@ -19,4 +19,31 @@ Description of Parameters
 # Here, we need to know that graph_file.gml is the file that will be used for the analysis and the format here is Graph Modeling Language (.gml), which describes the graph's structure with those attributes. 
 # Also, the program should read the attributes of both nodes and edges in a file. 
 
+-- components n 
+
+# This specifies that the graph should be partitioned into n components. 
+# This also divides the graph into n subgraphs or clusters.
+# This computes the betweeness and removes the edge with the highest value. Repeat this process until you have n components.
+
+-- plot[CINIP]
+
+# This determines how the graph should be plotted. 
+# C: if this option's selected, the script will plot the highlighted cluster coefficients.
+# The cluster coefficient is proportional to its size. Let cluster_min, and cluster_max be the min and max cluster coefficients, and let cv be the clustering 
+# coefficient node of v and pv = (cv - cluster_min) / (cluster_max - cluster_min) of node v.
+# The size v is proportional to pv. Let max_pixel and min_pixel be the minimum and maximum pixel sides of our nodes. 
+# Therfore, the node v will have size min_pixel + pv(max_pixel - min_pixel).
+# N: If this option is selected, the script will plot the graph highlighting neighborhood overlap (which measures how much overlap there is between 
+# neighbohoods of adjacent nodes.) Similar to the clustering coefficient.
+# In this option, the plot must be interactive. In other words, when the user clicks on a node u, it must display the BFS with u as a root.
+# P: If this option's selected, the script will color the node according to the attribute if it is assigned, or a default color if not.
+
+-- verify_homophily 
+
+# The tests for graph homophily are based on the given node colors because we use Student t-test. Homophily determines wheter nodes with the same color are likely to have a connection 
+
+--verify_balanced_graph 
+
+
+
 
