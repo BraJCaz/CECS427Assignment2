@@ -44,6 +44,17 @@ Description of Parameters
 
 --verify_balanced_graph 
 
+# We also need to check if the graph is balanced based on the assigned edge signs. A balanced graph is one where signs on the edges are consistent with the node attributes.
+--output out_graph_file.gml
 
+# Then, we must specify the file to which the final graph and results should be saved. In this part,  out_graph_file.gml is the output file that will receive the updated graph nodes and edge attributes should be also saved in the out_graph_file.gml.
+
+python ./graph_analysis.py graph_file.gml --components 3 --plot CN --output out_graph_file.gml
+
+# After that, we read graph_file.gml and partion it to 3 different components, plot the graph and highlight the clustering coefficient, and save the graph in the out_graph_file.gml
+
+python ./graph_analysis.py homophily.gml --plot P --verify_homophily 
+
+# Finally, we read our graph file
 
 
