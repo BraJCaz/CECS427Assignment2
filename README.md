@@ -55,6 +55,6 @@ python ./graph_analysis.py graph_file.gml --components 3 --plot CN --output out_
 
 python ./graph_analysis.py homophily.gml --plot P --verify_homophily 
 
-# Finally, we read our graph file
+# Finally, we read our graph file because we must also read our balanced_graph.gml, plot the graph and verify that the graph is balanced. 
 
 
